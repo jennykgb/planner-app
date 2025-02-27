@@ -2,13 +2,13 @@ import { useState } from 'react'
 
 
 
-function Day() {
-  
+function Day(props) {
+  const {day} = props
 
   return (
     <div className='dayContainer'>
-        <div>
-           <p>1</p>
+        <div className='dayContainer-top'>
+           <h3 className='titles'>{day}</h3>
            <p>chores</p>
         </div>
         
